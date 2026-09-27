@@ -62,9 +62,9 @@ public class EntityToyElfArcher extends BaseDefensiveMob implements IRangedAttac
         this.dataManager.register(SWINGING_ARMS, false);
     }
 
-    /**
-     * Verifica si la entidad tiene un arco equipado en la mano principal.
-     */
+   /**
+   * Checks if she has a bow equipped in the main hand. 
+   */
     public boolean hasBowEquipped() {
         ItemStack mainHand = this.getHeldItemMainhand();
         return !mainHand.isEmpty() && mainHand.getItem() instanceof ItemBow;
@@ -98,7 +98,7 @@ public class EntityToyElfArcher extends BaseDefensiveMob implements IRangedAttac
         this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
         this.tasks.addTask(6, new EntityAILookIdle(this));
 
-        // Solo reacciona si tiene un arco equipado
+        // She only reacts if she has a bow equipped.
         this.targetTasks.addTask(1, new EntityAIOwnerHurtByTarget(this) {
             @Override
             public boolean shouldExecute() {
@@ -130,7 +130,7 @@ public class EntityToyElfArcher extends BaseDefensiveMob implements IRangedAttac
             if (this.hasBowEquipped()) {
                 this.tasks.addTask(3, this.aiArrowAttack);
             } else {
-                // Si pierde el arco, olvida al objetivo e interrumpe cualquier movimiento
+                // If the bow is lost, the target is forgotten and any movement is interrupted.
                 this.setAttackTarget(null);
                 this.getNavigator().clearPath();
             }
