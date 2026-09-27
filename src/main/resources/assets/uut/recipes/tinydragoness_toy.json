@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#D#",
+        "CTC",
+        "ScS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:concrete",
+            "data": 3
+        },
+        "S": {
+            "item": "minecraft:concrete",
+            "data": 14
+        },
+        "D": {
+            "item": "minecraft:dragon_breath"
+        },
+        "C": {
+            "item": "minecraft:chorus_fruit_popped"
+        },
+        "T": {
+            "item": "uut:tyrannosaur_toy"
+        },
+        "c": {
+            "item": "minecraft:cobblestone"
+        }
+    },
+    "result": {
+        "item": "uut:tinydragoness_toy"
+    }
+}

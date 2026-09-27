@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "P#P",
+        "STS",
+        "SBS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:flint_and_steel"
+        },
+        "S": {
+            "item": "minecraft:iron_ingot"
+        },
+        "P": {
+            "item": "minecraft:redstone"
+        },
+        "B": {
+            "item": "minecraft:gunpowder"
+        },
+        "T": {
+            "item": "uut:toy_box"
+        }
+    },
+    "result": {
+        "item": "uut:bomby_toy"
+    }
+}

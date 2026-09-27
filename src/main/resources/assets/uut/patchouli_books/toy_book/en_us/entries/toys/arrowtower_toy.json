@@ -1,0 +1,31 @@
+{
+  "name": "Arrow Tower",
+  "category": "toys",
+  "icon": "uut:arrowtower_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Arrow Tower$() is a stationary unit providing consistent long-range support and high resilience to hazards."
+    },
+    {
+      "type": "text",
+      "title": "Tower Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 5$(li)$(6)Damage:$() 4-5 per Arrow$(li)$(4)Immunities:$() Fire, Poison$(li)$(4)Range:$() Medium$(br2)Fires at $(b)medium speed$() to maintain a defensive perimeter."
+    },
+    {
+      "type": "text",
+      "title": "Ammunition System",
+      "text": "You can $(b)load or replace$() any arrow type."
+    },
+    {
+      "type": "text",
+      "title": "Infinite Ammo",
+      "text": "Tired of reloading? You can apply an $(b)any Enchanted Books$() to the tower. This grants it $(5)infinite arrows$(), ensuring it never runs out of ammunition during a siege."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:arrowtower_toy",
+      "text": "Requires a sturdy build."
+    }
+  ]
+}

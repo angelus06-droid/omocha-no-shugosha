@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " B ",
+        "BSB",
+        " B "
+    ],
+    "key": {
+       
+
+        "S": {
+            "item": "uut:dummy_toy"
+
+
+        },
+        "B": {
+            "item": "minecraft:tnt"
+
+
+        }
+    },
+    "result": {
+        "item": "uut:dummy_toy_explosive"
+
+    }
+}

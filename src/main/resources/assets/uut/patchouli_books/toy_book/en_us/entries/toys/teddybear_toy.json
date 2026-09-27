@@ -1,0 +1,26 @@
+{
+  "name": "Teddy Bear",
+  "category": "toys",
+  "icon": "uut:teddybear_toy:12",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Teddy Bear$() is an adaptable unit. Unlike others, this warrior can be equipped with weapons for any situation."
+    },
+    {
+      "type": "text",
+      "title": "Equipment & Stats",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 10$(li)$(6)Base Damage:$() 4$(br2)Can hold $(b)Swords, Bows, or Shields$(). With a sword, it has a $(6)30% chance$() to perform a $(b)Sweeping Attack$()."
+    },
+    {
+      "type": "text",
+      "title": "Advanced Upgrades",
+      "text": "$(li)$(4)Fire Immunity:$() Right-click with $(b)Blaze Powder$().$(li)$(9)Shielding:$() Absorbs all damage while holding a shield.$(br2)$(c)Note:$() Items $(4)break$() over time with use."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:teddybear_toy_brown",
+      "text": "A soft exterior hiding a fierce warrior. Can be crafted using $(b)any wool color$()."
+    }
+  ]
+}

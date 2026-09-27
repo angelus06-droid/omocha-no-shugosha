@@ -1,0 +1,8 @@
+{
+  "name": "item.toy_book.name",
+  "landing_text": "info.toy_book.landing",
+  "model": "uut:toy_book",
+  "version": 1,
+  "creative_tab": "misc",
+  "book_texture": "uut:textures/gui/book_custom.png"
+}

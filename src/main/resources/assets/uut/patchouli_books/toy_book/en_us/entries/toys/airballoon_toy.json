@@ -1,0 +1,26 @@
+{
+  "name": "Air Balloon",
+  "category": "toys",
+  "icon": "uut:airballoon_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Air Balloon$() is a support unit. It doesn't fight; it's a companion that helps you manage loot."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 0$(br2)It cannot be pushed by enemies, staying right where you need it."
+    },
+    {
+      "type": "text",
+      "title": "Loot Collection",
+      "text": "The Balloon $(b)follows the player$() acting as a $(6)magnetic vacuum$(), pulling all $(b)Items$() and $(b)Experience Orbs$() to its position."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:airballoon_toy",
+      "text": "Crafted with light materials."
+    }
+  ]
+}

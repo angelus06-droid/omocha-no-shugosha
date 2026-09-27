@@ -1,0 +1,26 @@
+{
+  "name": "Klee's Pump",
+  "category": "toys",
+  "icon": "uut:kleebomby_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Klee's Pump$() is a explosive yet adorable plushie inspired by Klee's iconic bombs from Genshin Impact, complete with cute paws and ears."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 10$(li)$(4)Special:$() AoE Explosion (5 Damage)$(br2)Leaps into melee combat and delivers explosive area damage without self-destructing."
+    },
+    {
+      "type": "text",
+      "title": "Abilities",
+      "text": "$(li)$(4)Expert Regeneration:$() Recovers 2 health bars every 3 seconds.$(li)$(6)Leap Attack:$() Swiftly jumps toward enemies to close the distance."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:kleebomby_toy",
+      "text": "KABOOM!!!"
+    }
+  ]
+}

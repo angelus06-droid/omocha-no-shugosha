@@ -1,0 +1,31 @@
+{
+  "name": "Garden Gnome",
+  "category": "toys",
+  "icon": "uut:gnome_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Garden Gnome$() is a peaceful and highly efficient land helper. He moves $(b)faster$() than the Hay Farmer, ensuring your crops are handled with superior agility."
+    },
+    {
+      "type": "text",
+      "title": "Farming Operations",
+      "text": "$(b)Equip him with shears$() to start. He will:$(li)$(6)Harvest$() grown crops.$(li)$(6)Replant$() seeds.$(li)$(6)Store$() items in chest."
+    },
+    {
+      "type": "text",
+      "title": "Chest Assignment",
+      "text": "Use the $(b)Toy Command Staff$() to assign a storage chest:$(li)$(6)Shift + Right Click$() on the chest to set its position.$(li)$(6)Shift + Right Click$() again to confirm the assignment."
+    },
+    {
+      "type": "text",
+      "title": "Behavior",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 0$(br2)$(c)Notice:$() Known for his $(b)quick movement$() on the field. He remains $(b)strictly peaceful$() and cannot fight. Keep him protected!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:gnome_toy",
+      "text": "Crafted with organic materials and the enduring hardness of a realistic garden."
+    }
+  ]
+}

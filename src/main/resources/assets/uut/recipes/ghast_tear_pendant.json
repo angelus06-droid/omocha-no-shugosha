@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "=o=",
+        "#T#",
+        "#G#"
+    ],
+    "key": {
+        "=": {
+            "item": "minecraft:iron_ingot"
+        },
+        "o": {
+            "item": "minecraft:slime_ball"
+        },
+        "#": {
+            "item": "minecraft:string"
+        },
+        "T": {
+            "item": "uut:toy_upgrading_list"
+        },
+        "G": {
+            "item": "minecraft:ghast_tear"
+        }
+    },
+    "result": {
+        "item": "uut:ghast_tear_pendant"
+    }
+}

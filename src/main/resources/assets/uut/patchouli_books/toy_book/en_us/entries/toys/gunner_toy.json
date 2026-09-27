@@ -1,0 +1,31 @@
+{
+  "name": "Gunner",
+  "category": "toys",
+  "icon": "uut:gunner_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Gunner$() is a versatile ranged unit. Capable of equipping bows or its custom sidearm, it provides flexible firepower depending on its gear."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 0$(li)$(4)Range:$() Medium$(br2)Can equip $(b)Bows$() or its signature $(b)Gun$(). Deals $(4)2.0 Damage$() depending on the equipped weapon."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:gunner_toy",
+      "text": "Requires precision components and a dispenser."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:gunner_gun",
+      "text": "its own gun; it deals 5.5 damage and reloads with iron nuggets."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:watergun",
+      "text": "Its special feature is its $(l)Water Gun$(); it fires automatically, deals 2.5 damage and reloads with water bottles."
+    }
+  ]
+}

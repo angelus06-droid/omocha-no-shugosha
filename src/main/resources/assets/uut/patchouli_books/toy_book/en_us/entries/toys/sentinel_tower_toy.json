@@ -1,0 +1,26 @@
+{
+  "name": "Sentinel Tower",
+  "category": "toys",
+  "icon": "uut:sentinel_tower_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Sentinel Tower$() is a heavy defense evolution. It trades speed for $(b)devastating heavy ordinance$() and superior targeting."
+    },
+    {
+      "type": "text",
+      "title": "Stats",
+      "text": "$(li)$(6)Health:$() 40 $(li)$(6)Armor:$() 15 $(li)$(4)Range:$() Large$(br2)$(b)Immune$() to $(4)Fire and Poison$()."
+    },
+    {
+      "type": "text",
+      "title": "Homing Ordnance",
+      "text": "Fires $(b)Homing Missiles$() that deal $(4)6 Explosive Damage$(). $(br2)$(a)Note:$() Explosions $(b)will not$() damage your allies and you."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:sentinel_tower_toy",
+      "text": "Requires advanced tracking components."
+    }
+  ]
+}

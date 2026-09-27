@@ -1,0 +1,21 @@
+{
+  "name": "Destroyer Pity",
+  "category": "toys",
+  "icon": "uut:destroyerpity_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Inspired by the eerie Abyssal forces of Kantai Collection, the $(l)Destroyer Pity$() is a formidable aquatic toy. She thrives in the deep, striking terror into her foes from the waves."
+    },
+    {
+      "type": "text",
+      "title": "Combat Statistics",
+      "text": "$(li)$(6)Health:$() 50$(li)$(6)Armor:$() 15$(li)$(6)Damage:$() 7.5$(br2)Special technique: $(b)Perfect Swimmer$(). When submerged in water, her attacks become devastating. You can restore her health by feeding her $(b)Cookies$(), though they are quite rare to find."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:destroyerpity_toy",
+      "text": "Advanced naval and cute fish."
+    }
+  ]
+}

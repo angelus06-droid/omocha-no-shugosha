@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        ".#.",
+        "#T#",
+        ".#."
+    ],
+    "key": {
+        ".": {
+            "item": "minecraft:blaze_powder"
+        },
+        "#": {
+            "item": "minecraft:glass_bottle"
+        },
+        "T": {
+            "item": "uut:toy_upgrading_list"
+        }
+    },
+    "result": {
+        "item": "uut:toy_attack_booster",
+        "count": 2
+    }
+}

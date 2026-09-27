@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "XOX",
+        "@X@"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wool",
+            "data": 15
+        },
+        "X": {
+            "item": "minecraft:wool",
+            "data": 3
+        },
+        "O": {
+            "item": "uut:teddybear_toy",
+            "data": 32767
+        },
+        "@": {
+            "item": "minecraft:lapis_block"
+        }
+    },
+    "result": {
+        "item": "uut:teddyqilin_toy"
+    }
+}

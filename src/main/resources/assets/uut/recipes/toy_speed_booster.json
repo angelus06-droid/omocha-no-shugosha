@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S#S",
+        "#T#",
+        "S#S"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "#": {
+            "item": "minecraft:glass_bottle"
+        },
+        "T": {
+            "item": "uut:toy_upgrading_list"
+        }
+    },
+    "result": {
+        "item": "uut:toy_speed_booster",
+        "count": 2
+    }
+}

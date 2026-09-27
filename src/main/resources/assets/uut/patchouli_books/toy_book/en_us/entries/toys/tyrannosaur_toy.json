@@ -1,0 +1,26 @@
+{
+  "name": "Tyrannosaur",
+  "category": "toys",
+  "icon": "uut:tyrannosaur_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Tyrannosaur$() is a primitive powerhouse, blending agility with raw strength. It is a highly effective melee unit designed for sustained combat."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 30$(li)$(6)Armor:$() 10$(li)$(6)Damage:$() 8$(li)$(4)Speed:$() High$(br2)Features $(b)50% Knockback Resistance$() to push through enemy lines easily."
+    },
+    {
+      "type": "text",
+      "title": "Abilities",
+      "text": "$(li)$(4)Life Steal:$() Heals by biting enemies and inflicts a $(4)Slowness$() effect.$(li)$(6)Leap:$() Jumps at targets to close distance.$(br2)Extremely lethal in 1v1 encounters."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:tyrannosaur_toy",
+      "text": "Crafted with ancient and prehistoric powers."
+    }
+  ]
+}

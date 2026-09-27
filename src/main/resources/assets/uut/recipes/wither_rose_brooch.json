@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#.#",
+        "=T=",
+        "CoC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:soul_sand"
+        },
+        ".": {
+            "item": "minecraft:redstone"
+        },
+        "=": {
+            "item": "minecraft:gold_ingot"
+        },
+        "T": {
+            "item": "uut:toy_upgrading_list"
+        },
+        "C": {
+            "item": "minecraft:coal",
+            "data": 0
+        },
+        "o": {
+            "item": "minecraft:emerald"
+        }
+    },
+    "result": {
+        "item": "uut:wither_rose_brooch"
+    }
+}

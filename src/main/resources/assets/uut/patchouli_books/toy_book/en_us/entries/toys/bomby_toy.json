@@ -1,0 +1,21 @@
+{
+  "name": "Mr. Bomby",
+  "category": "toys",
+  "icon": "uut:bomby_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)Mr. Bomby$() is a toy Creeper with the same explosive potential as its biological counterpart."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 10$(li)$(6)Armor:$() 0$(li)$(4)Special:$() Explosive$(br2)$(c)Warning:$() High temperatures or $(4)Fire$() cause immediate self-destruction!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:bomby_toy",
+      "text": "Explosion radius is identical to a standard Creeper."
+    }
+  ]
+}

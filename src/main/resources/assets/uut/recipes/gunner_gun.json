@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "D#C",
+        "Lc#",
+        "  C"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:dispenser"
+        },
+        "#": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:dye",
+            "data": 0
+        },
+        "L": {
+            "item": "minecraft:lever"
+        },
+        "c": {
+            "item": "minecraft:coal_block"
+        }
+    },
+    "result": {
+        "item": "uut:gunner_gun"
+    }
+}

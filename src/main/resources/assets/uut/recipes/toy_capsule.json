@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#X#",
+        "OOO"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass"
+        },
+        "X": {
+            "item": "minecraft:ender_pearl"
+        },
+        "O": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 14
+        }
+    },
+    "result": {
+        "item": "uut:toy_capsule"
+    }
+}

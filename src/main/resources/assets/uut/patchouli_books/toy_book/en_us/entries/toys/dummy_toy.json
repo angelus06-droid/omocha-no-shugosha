@@ -1,0 +1,26 @@
+{
+  "name": "Dummy",
+  "category": "toys",
+  "icon": "uut:dummy_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Dummy$() is the ultimate stationary distraction. It cannot move or attack, but its sturdy build lets it soak up massive damage."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 20$(li)$(4)Resistance:$() Knockback$(br2)High armor allows it to survive while your other units eliminate threats."
+    },
+    {
+      "type": "text",
+      "title": "The Taunt Mechanic",
+      "text": "Every $(b)10s$(), the Dummy $(6)taunts$() hostile mobs within $(b)20 blocks$(), acting as a $(b)Mob Magnet$() to keep you safe."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:dummy_toy",
+      "text": "Built like a scarecrow."
+    }
+  ]
+}

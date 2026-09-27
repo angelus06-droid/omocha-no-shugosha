@@ -1,0 +1,31 @@
+{
+  "name": "High Princess",
+  "category": "toys",
+  "icon": "uut:highprincess_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)High Princess$() is a powerful commander on the battlefield. She directs combat by summoning varied minions while maintaining strong defenses."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 60$(li)$(6)Armor:$() 20$(br2)Capable of commanding both melee and ranged allies to overload enemy formations."
+    },
+    {
+      "type": "text",
+      "title": "Abilities",
+      "text": "$(li)$(4)Summoning:$() Calls Goblins, Recruits, Ogres, Guards, Shooters, Ents, and Trolls to her side.$(li)$(6)Stat Boost:$() Minions inherit and gain bonuses from the same boosters active on her."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:highprincess_toy",
+      "text": "Crafted with royal authority and summoning essences."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:princess_crown",
+      "text": "And the most important thing is her crown."
+    }
+  ]
+}

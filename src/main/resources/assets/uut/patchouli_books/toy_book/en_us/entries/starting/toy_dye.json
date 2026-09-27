@@ -1,0 +1,16 @@
+{
+  "name": "Toy Dyeing Theory",
+  "category": "starting",
+  "icon": "minecraft:dye",
+  "meta": 5,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Did you know you can customize your toys? By using different dyes, you can color your toys to give them a unique and vibrant look. This process is not random; your toy will take on the exact color of the dye you use!"
+    },
+    {
+      "type": "text",
+      "text": "Additionally, farm toys can be dyed specifically by holding the Shift key while applying the dye."
+    }
+  ]
+}

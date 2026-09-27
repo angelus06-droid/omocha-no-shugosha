@@ -1,0 +1,26 @@
+{
+  "name": "Tiny Dragoness",
+  "category": "toys",
+  "icon": "uut:tinydragoness_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Tiny Dragoness$() is a graceful companion that glides effortlessly through the air, combining delicate movement with steady offensive support."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 80$(li)$(6)Armor:$() 20$(li)$(6)Damage:$() 7.0$(br2)Features $(b)Slow Falling$() to ensure a safe and steady descent during battle."
+    },
+    {
+      "type": "text",
+      "title": "Abilities",
+      "text": "$(li)$(c)Magical Fire:$() Every 10 seconds, she spits a burst of magic fire that deals $(c)1.5 damage$() to nearby targets."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:tinydragoness_toy",
+      "text": "Crafted with magical energy and dragon essence."
+    }
+  ]
+}

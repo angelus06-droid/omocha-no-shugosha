@@ -1,0 +1,16 @@
+{
+  "name": "Toy box",
+  "category": "starting",
+  "icon": "uut:toy_box",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The toy box is a material you can use to make your own toys."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_box",
+      "text": "It's easy to do."
+    }
+  ]
+}

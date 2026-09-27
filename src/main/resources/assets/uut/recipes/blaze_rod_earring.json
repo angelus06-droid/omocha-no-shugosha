@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        ".#.",
+        "#T#",
+        "///"
+    ],
+    "key": {
+        ".": {
+            "item": "minecraft:gold_nugget"
+        },
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "T": {
+            "item": "uut:toy_upgrading_list"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+        }
+    },
+    "result": {
+        "item": "uut:blaze_rod_earring"
+    }
+}

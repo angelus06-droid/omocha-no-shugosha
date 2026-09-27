@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " SS",
+        "WDW",
+        " #/"
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:concrete",
+            "data": 11
+        },
+        "S": {
+            "item": "minecraft:stained_glass",
+            "data": 3
+        },
+        "#": {
+            "item": "minecraft:concrete",
+            "data": 3
+        },
+        "D": {
+            "item": "minecraft:dispenser"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "uut:watergun"
+    }
+}

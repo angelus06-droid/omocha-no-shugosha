@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "uut:items/toy_defense_booster"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Toy capsule",
+  "category": "starting",
+  "icon": "uut:toy_capsule",
+  "pages": [
+    {
+      "type": "text",
+      "text": "A special capsule designed to safely store and carry your toys, just can carry one."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_capsule",
+      "text": "Crafting it is simple and quick, no much."
+    }
+  ]
+}

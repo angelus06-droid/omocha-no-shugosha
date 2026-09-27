@@ -1,0 +1,26 @@
+{
+  "name": "Sandrone's Doll",
+  "category": "toys",
+  "icon": "uut:sandrone_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)Sandrone's Doll$() is a massive juggernaut and a masterpiece of engineering, capable of absorbing immense damage while crushing enemies."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 100$(li)$(6)Armor:$() 10$(li)$(4)Melee Damage:$() 7.5$(br2)Its massive health pool allows it to stand its ground against powerful bosses. You can heal it by equipping food to it."
+    },
+    {
+      "type": "text",
+      "title": "Homing Projectiles",
+      "text": "Every $(6)15 seconds$(), the doll creates homing projectiles that track down and strike nearby enemies."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:sandrone_toy",
+      "text": "Requires premium materials. Sandrone is back; Toymaker has the plans to make the tiny Pulonia, if only they could do it from the beginning."
+    }
+  ]
+}

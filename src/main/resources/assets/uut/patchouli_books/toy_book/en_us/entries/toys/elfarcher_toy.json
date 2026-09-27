@@ -1,0 +1,51 @@
+{
+  "name": "Elf Archer",
+  "category": "toys",
+  "icon": "uut:elfarcher_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Elf Archer$() is a precise ranged unit. She can only be equipped with classical bows and excels at delivering elemental ranged support from a distance."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 40$(li)$(6)Armor:$() 5$(li)$(6)Damage:$() 4.0 - 5.0 per hit$(br2)Has a $(b)50% chance$() to fire a special arrow based on the accessory held in her off hand."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:elfarcher_toy",
+      "text": "Crafted with nature's essence and fine marksmanship."
+    },
+    {
+      "type": "text",
+      "title": "Accessories (1/2)",
+      "text": "$(li)$(c)Blaze Rod Earring:$() Fires piercing flame arrows.$(br2)$(li)$(8)Wither Rose Brooch:$() Fires piercing arrows that inflict Wither I for 10 seconds."
+    },
+    {
+      "type": "text",
+      "title": "Accessories (2/2)",
+      "text": "$(li)$(6)Ghast Tear Pendant:$() Fires piercing arrows with a 50% chance of a small explosion on impact.$(br2)$(li)$(5)Dragon Hairpin:$() Fires piercing arrows that create dragon's breath on the ground."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:blaze_rod_earring",
+      "text": "Crafted with flaming jewels."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:wither_rose_brooch",
+      "text": "Love always withers..."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:ghast_tear_pendant",
+      "text": "Used to make the tears explode."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:dragon_hairpin",
+      "text": "Dragon's breath is beautiful."
+    }
+  ]
+}

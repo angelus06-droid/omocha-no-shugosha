@@ -1,0 +1,26 @@
+{
+  "name": "Crimson Bunny",
+  "category": "toys",
+  "icon": "uut:crimsonbunny_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Crimson Bunny$() is an agile combat toy inspired by Arlecchino. Moving exclusively through forward leaps, she dominates the battlefield with precision and lethal burst potential."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 40$(li)$(6)Armor:$() 15$(li)$(6)Damage:$() 6.5$(br2)Behaves like a rabbit, moving strictly by $(b)jumping forward$()."
+    },
+    {
+      "type": "text",
+      "title": "Abilities",
+      "text": "$(li)$(4)Lethal Charge:$() When fully charged, her next strike deals $(4)double damage$() and briefly $(4)stuns$() the target.$(br2) Devastating when allowed to reach full potency."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:crimsonbunny_toy",
+      "text": "Crafted with blood-red alloys and agile mechanics."
+    }
+  ]
+}

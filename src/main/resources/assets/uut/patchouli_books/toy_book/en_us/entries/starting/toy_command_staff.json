@@ -1,0 +1,15 @@
+{
+  "name": "Orders",
+  "category": "starting",
+  "icon": "uut:toy_command_staff",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The only way to give command to your toys, without it you can't do anything and they'll follow you around all the time. It can also give the position of any chest for farmer toys."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_command_staff"
+    }
+  ]
+}

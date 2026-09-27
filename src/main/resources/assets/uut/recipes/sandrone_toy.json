@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#D#",
+        "ITI",
+        "V.V"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wool",
+            "data": 15
+        },
+        "V": {
+            "item": "minecraft:wool",
+            "data": 7
+        },
+        "D": {
+            "item": "minecraft:dispenser"
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+        },
+        "T": {
+            "item": "uut:toy_box"
+        },
+        ".": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "uut:sandrone_toy"
+    }
+}

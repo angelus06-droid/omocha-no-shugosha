@@ -1,0 +1,23 @@
+{
+    "pattern": [
+        "SSS",
+        "SBS",
+        "SSS"
+    ],
+    "type": "forge:ore_shaped",
+    "key": {
+        "S": {
+            "type": "forge:ore_dict",
+            "ore": "plankWood"
+
+        },
+        "B": {
+            "item": "minecraft:iron_ingot"
+
+        }
+
+    },
+    "result": {
+        "item": "uut:toy_box"
+    }
+}

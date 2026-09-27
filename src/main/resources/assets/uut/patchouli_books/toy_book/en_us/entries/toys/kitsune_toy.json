@@ -1,0 +1,21 @@
+{
+  "name": "Plushie Kitsune",
+  "category": "toys",
+  "icon": "uut:kitsune_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Plushie Kitsune$() is a toy based on Japanese folklore. It is a mystical fighter with unique defensive and regenerative capabilities."
+    },
+    {
+      "type": "text",
+      "title": "Combat Statistics",
+      "text": "$(li)$(6)Health:$() 30$(li)$(6)Armor:$() 20$(li)$(6)Damage:$() 6.5$(br2)Immunities: $(b)Wither, Levitation, and Fire$().$(br2)Special technique: $(b)Japanese Teleportation$() — when it deals damage or is attacked by an enemy, it teleports and heals one heart."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:kitsune_toy",
+      "text": "It's anything but, but it's not as expensive as it seems."
+    }
+  ]
+}

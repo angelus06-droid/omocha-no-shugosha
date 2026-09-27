@@ -1,0 +1,26 @@
+{
+  "name": "Spaceship",
+  "category": "toys",
+  "icon": "uut:spaceship_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Spaceship$() is an advanced aerial unit that hovers above the ground, pursuing enemies with speed and precision."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 10$(li)$(4)Damage:$() 7$(br2)$(b)Immune to:$() Fire, Poison, Fall Damage, and Knockback. It is nearly impossible to displace."
+    },
+    {
+      "type": "text",
+      "title": "Combat Abilities",
+      "text": "Uses a $(b)Dodge Ability$() to swiftly evade incoming attacks."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:spaceship_toy",
+      "text": "High-tech build powered by redstone."
+    }
+  ]
+}

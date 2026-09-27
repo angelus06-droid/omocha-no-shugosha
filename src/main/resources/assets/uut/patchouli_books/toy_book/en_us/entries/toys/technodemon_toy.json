@@ -1,0 +1,26 @@
+{
+  "name": "Tiny Techno-Demon",
+  "category": "toys",
+  "icon": "uut:technodemon_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Tiny Techno-Demon$() is a fast-firing ranged unit blending demonic energy with mechanical precision. Though weaker than the Tiny Tank, its rapid strikes keep pressure on enemies."
+    },
+    {
+      "type": "text",
+      "title": "Combat Statistics",
+      "text": "$(li)$(6)Health:$() 25$(li)$(6)Armor:$() 15$(li)$(4)Range:$() Long$(li)$(4)Speed:$() High$(br2)Its supernatural engineering grants it full immunity to knockback, holding firm against heavy hits."
+    },
+    {
+      "type": "text",
+      "title": "Telegraphic Missiles",
+      "text": "Fires cannon-style $(b)Telegraphic Missiles$() that deal $(6)4.0 damage$().$(br2)Boasts a superior fire rate to relentlessly pepper targets from a distance."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:technodemon_toy",
+      "text": "Crafted using infernal components and tech parts."
+    }
+  ]
+}

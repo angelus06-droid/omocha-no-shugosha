@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#o#",
+        "/T/",
+        "RGR"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wool",
+            "data": 8
+        },
+        "G": {
+            "item": "minecraft:wool",
+            "data": 14
+        },
+        "o": {
+            "item": "minecraft:quartz"
+        },
+        "/": {
+            "item": "minecraft:bone"
+        },
+        "T": {
+            "item": "uut:toy_box"
+        },
+        "R": {
+            "item": "minecraft:rabbit_foot"
+        }
+    },
+    "result": {
+        "item": "uut:crimsonbunny_toy"
+
+    }
+}

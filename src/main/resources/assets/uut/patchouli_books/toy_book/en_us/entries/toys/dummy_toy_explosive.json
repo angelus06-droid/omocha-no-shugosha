@@ -1,0 +1,26 @@
+{
+  "name": "Explosive Dummy",
+  "category": "toys",
+  "icon": "uut:dummy_toy_explosive",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Explosive Dummy$() is a dangerous distraction. It retains the armor of the original model but hides a volatile surprise."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 20$(li)$(6)Armor:$() 20$(li)$(4)Range:$() 20$(br2)Every $(b)10s$() it $(b)taunts$() all hostile mobs, acting as a powerful $(6)Mob Magnet$()."
+    },
+    {
+      "type": "text",
+      "title": "The Final Revenge",
+      "text": "Upon death, it $(4)detonates$() in a powerful TNT explosion.$(br2)$(c)Caution:$() Be careful where you place it near your other units!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:dummy_toy_explosive",
+      "text": "Crafted by packing a Dummy with explosives."
+    }
+  ]
+}

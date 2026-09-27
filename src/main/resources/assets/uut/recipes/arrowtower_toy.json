@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PST",
+        "B#B",
+        "P P"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dispenser"
+
+        },
+
+        "S": {
+            "item": "minecraft:wool",
+            "data": 14
+
+        },
+        "P": {
+            "item": "minecraft:stick"
+
+        },
+
+        "B": {
+            "item": "minecraft:arrow"
+
+        },
+        "T": {
+            "item": "uut:toy_box"
+
+        }
+    },
+    "result": {
+        "item": "uut:arrowtower_toy"
+
+    }
+}

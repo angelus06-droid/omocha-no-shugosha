@@ -1,0 +1,158 @@
+{
+    "entity.t58.shoot": {
+    "sounds": [
+      "uut:t58/shoot"
+    ]
+  },
+    "entity.t58.death": {
+    "sounds": [
+      "uut:t58/death"
+    ]
+  },
+    "entity.sentinel_tower.shoot": {
+    "sounds": [
+      "uut:sentinel_tower/shoot"
+    ]
+  },
+	"entity.teddyqilin.say": {
+    "sounds": [
+      "uut:teddyqilin/say"
+    ]
+  },
+    "entity.teddyqilin.hurt": {
+    "sounds": [
+      "uut:teddyqilin/hurt_01",
+      "uut:teddyqilin/hurt_02",
+      "uut:teddyqilin/hurt_03",
+      "uut:teddyqilin/hurt_04"
+    ]
+  },
+    "entity.teddyqilin.death": {
+    "sounds": [
+      "uut:teddyqilin/death"
+    ]
+  },
+    "entity.tyrannosaur.say": {
+    "sounds": [
+      "uut:tyrannosaur/say"
+    ]
+  },
+    "entity.tyrannosaur.hurt": {
+    "sounds": [
+      "uut:tyrannosaur/hurt_01",
+      "uut:tyrannosaur/hurt_02",
+      "uut:tyrannosaur/hurt_03",
+      "uut:tyrannosaur/hurt_04"
+    ]
+  },
+    "entity.tyrannosaur.death": {
+    "sounds": [
+      "uut:tyrannosaur/death"
+    ]
+  },
+    "entity.kleebomby.say": {
+    "sounds": [
+      "uut:kleebomby/say"
+    ]
+  },
+    "entity.kleebomby.hurt": {
+    "sounds": [
+      "uut:kleebomby/hurt_01",
+      "uut:kleebomby/hurt_02",
+      "uut:kleebomby/hurt_03"
+    ]
+  },
+    "entity.kleebomby.death": {
+    "sounds": [
+      "uut:kleebomby/death"
+    ]
+  },
+    "entity.kleebomby.attack": {
+    "sounds": [
+      "uut:kleebomby/attack"
+    ]
+  },
+    "entity.kitsune.say": {
+    "sounds": [
+      "uut:kitsune/say_01",
+      "uut:kitsune/say_02",
+      "uut:kitsune/say_03",
+      "uut:kitsune/say_04",
+      "uut:kitsune/say_05",
+      "uut:kitsune/say_06"
+    ]
+  },
+    "entity.kitsune.hurt": {
+    "sounds": [
+      "uut:kitsune/hurt_01",
+      "uut:kitsune/hurt_02",
+      "uut:kitsune/hurt_03",
+      "uut:kitsune/hurt_04"
+    ]
+  },
+    "entity.kitsune.death": {
+    "sounds": [
+      "uut:kitsune/death_01",
+      "uut:kitsune/death_02"
+    ]
+  },
+	"entity.destroyer_pity.say": {
+    "sounds": [
+      "uut:destroyer_pity/say"
+    ]
+  },
+    "entity.destroyer_pity.hurt": {
+    "sounds": [
+      "uut:destroyer_pity/hurt_01",
+      "uut:destroyer_pity/hurt_02",
+      "uut:destroyer_pity/hurt_03",
+      "uut:destroyer_pity/hurt_04"
+    ]
+  },
+    "entity.destroyer_pity.death": {
+    "sounds": [
+      "uut:destroyer_pity/death"
+    ]
+  },
+    "entity.high_princess.prepare_summon": {
+    "sounds": [
+      "uut:high_princess/prepare_summon"
+    ]
+  },
+	"entity.tiny_dragoness.say": {
+    "sounds": [
+      "uut:tiny_dragoness/say"
+    ]
+  },
+    "entity.tiny_dragoness.hurt": {
+    "sounds": [
+      "uut:tiny_dragoness/hurt_01",
+      "uut:tiny_dragoness/hurt_02"
+    ]
+  },
+    "entity.tiny_dragoness.death": {
+    "sounds": [
+      "uut:tiny_dragoness/death"
+    ]
+  },
+    "entity.sandrone_doll.shoot": {
+    "sounds": [
+      "uut:sandrone_doll/shoot"
+    ]
+  },
+    "item.toy_box_open": {
+    "sounds": [
+      "uut:toy_box_open"
+    ]
+  },
+    "item.gunner_gun.shoot": {
+    "sounds": [
+      "uut:items/gunner_gun_shoot"
+    ]
+  },
+    "item.watergun.shoot": {
+    "sounds": [
+      "uut:items/watergun_shoot"
+    ]
+  }
+}

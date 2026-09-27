@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " #X",
+        "O@+",
+        "-#X"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:concrete",
+            "data": 7
+        },
+        "X": {
+            "item": "minecraft:quartz_block",
+            "data": 0
+        },
+        "O": {
+            "item": "minecraft:stained_glass",
+            "data": 11
+        },
+        "@": {
+            "item": "uut:spaceship_toy"
+        },
+        "+": {
+            "item": "minecraft:chorus_fruit"
+        },
+        "-": {
+            "item": "minecraft:dispenser"
+        }
+    },
+    "result": {
+        "item": "uut:t58_toy"
+    }
+}

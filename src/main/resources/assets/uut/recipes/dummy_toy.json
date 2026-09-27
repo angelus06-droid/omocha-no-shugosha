@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " B ",
+        "BSB",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+            
+
+        },
+
+        "S": {
+            "item": "uut:toy_box"
+
+
+        },
+        "B": {
+            "item": "minecraft:hay_block"
+
+
+        }
+    },
+    "result": {
+        "item": "uut:dummy_toy"
+
+    }
+}

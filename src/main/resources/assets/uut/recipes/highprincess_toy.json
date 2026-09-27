@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "WTW",
+        "CoC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "S": {
+            "item": "uut:princess_crown"
+        },
+        "W": {
+            "item": "minecraft:wool",
+            "data": 13
+        },
+        "T": {
+            "item": "uut:toy_box"
+        },
+        "C": {
+            "item": "minecraft:concrete",
+            "data": 11
+        },
+        "o": {
+            "item": "minecraft:emerald_block"
+        }
+    },
+    "result": {
+        "item": "uut:highprincess_toy"
+    }
+}

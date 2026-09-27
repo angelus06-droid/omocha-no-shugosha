@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "uut:toy_box"
+        },
+        {
+            "item": "minecraft:book"
+        }
+    ],
+    "result": {
+        "item": "patchouli:guide_book",
+        "count": 1,
+        "nbt": {
+            "patchouli:book": "uut:toy_book"
+        }
+    }
+}

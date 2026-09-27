@@ -1,0 +1,39 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "F#F",
+        "WCW",
+        "LTL"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wool",
+            "data": 14
+        },
+        "L": {
+            "type": "forge:ore_dict",
+            "ore": "logWood"
+
+        },
+        "C": {
+            "item": "minecraft:chest"
+
+        },
+        "F": {
+            "item": "minecraft:feather"
+
+        },
+        "W": {
+            "item": "minecraft:string"
+
+        },
+        "T": {
+            "item": "uut:toy_box"
+
+        }
+    },
+    "result": {
+        "item": "uut:airballoon_toy"
+
+    }
+}

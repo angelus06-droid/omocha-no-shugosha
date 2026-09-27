@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "DUD",
+        "SNS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:concrete",
+            "data": 7
+        },
+        "D": {
+            "item": "minecraft:dispenser"
+        },
+        "U": {
+            "item": "uut:tank_toy"
+        },
+        "S": {
+            "item": "minecraft:stone",
+            "data": 0
+        },
+        "N": {
+            "item": "minecraft:nether_wart"
+        }
+    },
+    "result": {
+        "item": "uut:technodemon_toy"
+    }
+}

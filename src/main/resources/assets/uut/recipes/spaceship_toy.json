@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "G#G",
+        "PTP"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:redstone"
+
+        },
+        "G": {
+            "item": "minecraft:stained_glass",
+            "data": 3
+
+        },
+        "P": {
+            "item": "minecraft:iron_ingot"
+
+        },
+        "T": {
+            "item": "uut:toy_box"
+
+        }
+    },
+    "result": {
+        "item": "uut:spaceship_toy"
+    }
+}

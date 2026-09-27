@@ -1,0 +1,26 @@
+{
+  "name": "T-58",
+  "category": "toys",
+  "icon": "uut:t58_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)T-58$() is a tactical flyer inspired by space fighters. It is a versatile unit that adapts by cycling its weapon systems in real-time."
+    },
+    {
+      "type": "text",
+      "title": "Hybrid Systems",
+      "text": "Cycles mode every $(b)20s$():$(li)$(4)Melee:$() Dives for $(6)7 Damage$().$(li)$(9)Ranged:$() Fast projectiles for $(6)5.5 Damage$().$(br2)A constant aerial threat that always pursues enemies."
+    },
+    {
+      "type": "text",
+      "title": "Unit Statistics",
+      "text": "$(li)$(6)Health:$() 25$(li)$(6)Armor:$() 10$(br2)Features $(b)Total Immunity$() to:$(li)Fire and Poison$(li)Fall Damage"
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:t58_toy",
+      "text": "A specialized build inspired by classic arcade shooters."
+    }
+  ]
+}

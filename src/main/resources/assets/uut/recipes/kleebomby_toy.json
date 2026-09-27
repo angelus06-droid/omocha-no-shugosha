@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#F#",
+        ".UD",
+        "#K#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wool",
+            "data": 4
+        },
+        "F": {
+            "item": "minecraft:wool",
+            "data": 14
+        },
+        ".": {
+            "item": "minecraft:gunpowder"
+        },
+        "U": {
+            "item": "uut:bomby_toy"
+        },
+        "D": {
+            "item": "minecraft:dragon_breath"
+        },
+        "K": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "uut:kleebomby_toy"
+    }
+}

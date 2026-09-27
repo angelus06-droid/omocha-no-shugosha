@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#X#",
+        "O@O",
+        "+-+"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:wheat"
+        },
+        "X": {
+            "item": "minecraft:leather_helmet"
+        },
+        "O": {
+            "item": "minecraft:wool",
+            "data": 0
+        },
+        "@": {
+            "item": "uut:toy_box"
+        },
+        "+": {
+            "item": "minecraft:hay_block"
+        },
+        "-": {
+            "item": "minecraft:leather_leggings"
+        }
+    },
+    "result": {
+        "item": "uut:hay_farmer_toy"
+    }
+}

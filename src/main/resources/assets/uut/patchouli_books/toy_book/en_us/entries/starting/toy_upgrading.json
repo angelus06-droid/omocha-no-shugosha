@@ -1,0 +1,41 @@
+{
+  "name": "Toy Upgrading",
+  "category": "starting",
+  "icon": "uut:toy_upgrading_list",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Keep your toys safe and battle-ready by enhancing them with special items and boosters."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_upgrading_list",
+      "text": "Crafting these upgrades is simple, quick, and safe."
+    },
+    {
+      "type": "text",
+      "title": "Toy Boosters",
+      "text": "If your toys are struggling in combat, craft boosters to permanently improve their core stats."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_heart_booster",
+      "text": "Increases maximum health."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_defense_booster",
+      "text": "Bolsters armor to reduce incoming damage."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_attack_booster",
+      "text": "Enhances attack power for stronger hits."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:toy_speed_booster",
+      "text": "Grants a movement speed boost."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+    {
+  "modid": "uut",
+  "name": "Omocha no Shugosha",
+  "description": "This mod will add 25 different living toys with unique fightning styles and purposes as well.",
+  "version": "2.0.1",
+  "mcversion": "1.12.2",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/omocha-no-shugosha",
+  "updateUrl": "",
+  "authorList": ["Angelus04"],
+  "credits": "Thanks for by rolik1997 with Toy Defenders mod!.",
+  "logoFile": "assets/uut/logo.png",
+  "screenshots": [],
+  "dependencies": ["patchouli"],
+  "useDependencyInformation": true
+    }
+]

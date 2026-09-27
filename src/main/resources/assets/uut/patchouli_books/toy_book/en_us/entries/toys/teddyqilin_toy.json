@@ -1,0 +1,21 @@
+{
+  "name": "Teddy Qilin",
+  "category": "toys",
+  "icon": "uut:teddyqilin_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Teddy Qilin$() is a mythical variant of the Teddy Bear. She retains her predecessor's versatility but moves with $(b)superior speed$() on the battlefield."
+    },
+    {
+      "type": "text",
+      "title": "Equipment & Stats",
+      "text": "$(li)$(6)Health:$() 15$(li)$(6)Armor:$() 10$(li)$(6)Base Damage:$() 4$(br2)She can wield $(b)Swords, Bows, or Shields$(). Her high agility allows her to close gaps faster than any other Teddy variant."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:teddyqilin_toy",
+      "text": "Crafted with the spirit of a swift mythical warrior."
+    }
+  ]
+}

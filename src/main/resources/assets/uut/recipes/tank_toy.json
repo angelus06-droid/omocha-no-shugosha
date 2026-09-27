@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#T#",
+        "DP#",
+        "IRI"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 13
+        },
+
+        "D": {
+            "item": "minecraft:dispenser"
+
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+
+        },
+        "R": {
+            "item": "minecraft:redstone"
+
+        },
+        "P": {
+            "item": "minecraft:tnt"
+
+        },
+        "T": {
+            "item": "uut:toy_box"
+
+        }
+    },
+    "result": {
+        "item": "uut:tank_toy"
+
+    }
+}

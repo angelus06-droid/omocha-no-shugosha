@@ -1,0 +1,21 @@
+{
+  "name": "Snow Yeti",
+  "category": "toys",
+  "icon": "uut:yeti_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Snow Yeti$() is the most basic toy and the first every Guardian learns to craft. It is a brave fighter that leaps at its enemies."
+    },
+    {
+      "type": "text",
+      "title": "Combat Statistics",
+      "text": "$(li)$(6)Health:$() 10$(li)$(6)Armor:$() 0$(li)$(6)Damage:$() 3$(br2)Special technique: $(b)leaps at enemies$() to close the distance quickly for melee combat."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:yeti_toy",
+      "text": "Basic recipe using the Toy Box."
+    }
+  ]
+}

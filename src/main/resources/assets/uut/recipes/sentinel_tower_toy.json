@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SDS",
+        "#/#",
+        "o#o"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 4
+        },
+        "D": {
+            "item": "minecraft:dispenser"
+        },
+        "#": {
+            "item": "minecraft:gold_ingot"
+        },
+        "/": {
+            "item": "uut:arrowtower_toy"
+        },
+        "o": {
+            "item": "minecraft:emerald"
+        }
+    },
+    "result": {
+        "item": "uut:sentinel_tower_toy"
+    }
+}

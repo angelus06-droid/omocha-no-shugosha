@@ -1,0 +1,31 @@
+{
+  "name": "Hay Farmer",
+  "category": "toys",
+  "icon": "uut:hay_farmer_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Hay Farmer$() is a basic land helper. While simpler than his Gnome cousins, he moves with a bit more $(b)speed$() and is dedicated to keeping your crops growing tall."
+    },
+    {
+      "type": "text",
+      "title": "Farming Operations",
+      "text": "$(b)Equip him with shears$() to start. He will:$(li)$(6)Harvest$() grown crops.$(li)$(6)Replant$() seeds.$(li)$(6)Apply bone meal$() to accelerate growth.$(li)$(6)Store$() items in chest."
+    },
+    {
+      "type": "text",
+      "title": "Chest Assignment",
+      "text": "Use the $(b)Toy Command Staff$() to assign a storage chest:$(li)$(6)Shift + Right Click$() on the chest to set its position.$(li)$(6)Shift + Right Click$() again to confirm the assignment."
+    },
+    {
+      "type": "text",
+      "title": "Behavior",
+      "text": "$(li)$(6)Health:$() 10$(li)$(6)Armor:$() 0$(br2)$(c)Notice:$() He moves $(b)slightly faster$() than a Gnome but remains $(b)strictly peaceful$(). Ensure his safety!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:hay_farmer_toy",
+      "text": "Assembled from dried hay and basic farming tools for reliable field work."
+    }
+  ]
+}

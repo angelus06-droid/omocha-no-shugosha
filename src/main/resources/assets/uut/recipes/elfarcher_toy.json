@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#)#",
+        "LTL",
+        "SBS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:reeds"
+        },
+        ")": {
+            "item": "minecraft:bow"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "T": {
+            "item": "uut:toy_box"
+        },
+        "S": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 1
+        },
+        "B": {
+            "item": "minecraft:book"
+        }
+    },
+    "result": {
+        "item": "uut:elfarcher_toy"
+    }
+}

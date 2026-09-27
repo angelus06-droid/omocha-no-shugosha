@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#XX",
+        "O@+",
+        "#--"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:quartz"
+        },
+        "X": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 13
+        },
+        "O": {
+            "item": "minecraft:sugar"
+        },
+        "@": {
+            "item": "uut:toy_box"
+
+        },
+        "+": {
+            "item": "minecraft:bone"
+        },
+        "-": {
+            "item": "minecraft:stained_hardened_clay",
+            "data": 5
+        }
+    },
+    "result": {
+        "item": "uut:tyrannosaur_toy"
+    }
+}

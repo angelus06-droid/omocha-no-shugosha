@@ -1,0 +1,26 @@
+{
+  "name": "Tiny Tank",
+  "category": "toys",
+  "icon": "uut:tank_toy",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l)Tiny Tank$() is a heavy unit capable of wiping out entire hordes with one or two well-placed shots."
+    },
+    {
+      "type": "text",
+      "title": "Combat Statistics",
+      "text": "$(li)$(6)Health:$() 40$(li)$(6)Armor:$() 20$(li)$(4)Range:$() Medium$(li)$(4)Immune to:$() Knockback, Fire, Poison$(br2)Its heavy weight prevents it from being pushed back."
+    },
+    {
+      "type": "text",
+      "title": "Tank Missiles",
+      "text": "Fires $(b)Missiles$() at $(6)Slow Speed$() with the power of TNT.$(br2)$(a)Safety:$() Explosions $(b)do not$() destroy blocks or damage allies."
+    },
+    {
+      "type": "crafting",
+      "recipe": "uut:tank_toy",
+      "text": "Requires significant resources and TNT."
+    }
+  ]
+}

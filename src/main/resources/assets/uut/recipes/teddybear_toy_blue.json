@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NSN",
+        "STS",
+        "S#S"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:armor_stand"
+
+        },
+        "S": {
+            "item": "minecraft:wool",
+            "data": 11
+
+        },
+        "N": {
+            "item": "minecraft:book"
+
+        },
+        "T": {
+            "item": "uut:toy_box"
+
+        }
+    },
+    "result": {
+        "item": "uut:teddybear_toy",
+        "data": 11
+    }
+}
