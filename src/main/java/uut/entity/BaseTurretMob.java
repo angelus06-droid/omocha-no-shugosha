@@ -77,7 +77,7 @@ public class BaseTurretMob extends EntityTameable implements IToyMob {
                 }
             }
 
-            // POTENCIADOR DE DEFENSA (Límite: 10)
+            // DEFENSE BOOSTER (Limit: 10)
             else if (stack.getItem() instanceof ItemToyDefenseBooster) {
                 if (this.defenseBoostCount < 10) {
                     if (!this.world.isRemote) {
