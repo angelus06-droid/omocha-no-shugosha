@@ -283,8 +283,8 @@ public class EntityToySandroneDoll extends BaseDefensiveMob {
             try {
                 containerResult = food.onItemUseFinish(singleItem, this.world, fakePlayer);
             } catch (Throwable modException) {
-                error("Error al simular efectos de comida de "
-                        + food.getRegistryName() + " en EntityToySandroneDoll", modException);
+                error("Error simulating food effects for "
+                        + food.getRegistryName() + " on EntityToySandroneDoll", modException);
             }
 
             for (PotionEffect effect : fakePlayer.getActivePotionEffects()) {
@@ -296,7 +296,7 @@ public class EntityToySandroneDoll extends BaseDefensiveMob {
             fakePlayer.clearActivePotions();
 
         } catch (Throwable t) {
-            error("Fallo inesperado simulando comida en EntityToySandroneDoll", t);
+            error("Unexpected failure simulating food on EntityToySandroneDoll", t);
         }
 
         return containerResult;
