@@ -43,7 +43,7 @@ public class EntityElfArcherGhastTear extends EntityTippedArrow {
     }
 
     private void initArrowProperties() {
-        // Se ha quitado this.setFire(100)
+        // Remove this.setFire(100)
         this.setDamage(1.0D + this.extraDamageMultiplier);
         this.pickupStatus = EntityTippedArrow.PickupStatus.DISALLOWED;
     }
