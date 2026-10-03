@@ -137,7 +137,7 @@ public class EntityElfArcherEndDragon extends EntityArrow {
                 }
             }
 
-            // Generar la nube de humo si la flecha alcanza el límite de penetración (pierce)
+            // Create the smoke cloud if the arrow reaches the penetration limit (pierce)
             if (this.piercedEntities.size() >= this.maxPierceCount) {
                 if (!this.world.isRemote && !this.spawnedCloud) {
                     this.spawnDragonBreathCloud();
@@ -147,7 +147,7 @@ public class EntityElfArcherEndDragon extends EntityArrow {
                 return;
             }
         } else {
-            // Si impactó contra un bloque sólido
+            // If it impacted a solid block
             if (!this.world.isRemote && !this.spawnedCloud) {
                 this.spawnDragonBreathCloud();
                 this.spawnedCloud = true;
