@@ -113,12 +113,12 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
 
     @Override
     public void travel(float strafe, float up, float forward) {
-        if (this.isSitting()) {
+        if (this.isSitting() || this.getHealth() <= 0.0F || this.isDead) {
             super.travel(0F, 0F, 0F);
             return;
         }
 
-        if (this.isServerWorld() && this.isInWater()) {
+            if (this.isServerWorld() && this.isInWater()) {
             this.moveRelative(strafe, up, forward, 0.1F);
             this.move(MoverType.SELF, this.motionX, this.motionY, this.motionZ);
 
@@ -219,7 +219,8 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
         if (this.attackTimer > 0) --this.attackTimer;
 
         if (!this.world.isRemote) {
-            if (this.isInWater() && this.getAttackTarget() != null && !this.isSitting()) {
+            if (this.isEntityAlive() && this.getHealth() > 0.0F
+                    && this.isInWater() && this.getAttackTarget() != null && !this.isSitting()) {
                 EntityLivingBase target = this.getAttackTarget();
 
                 double dx = target.posX - this.posX;
@@ -243,7 +244,7 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
                 }
             }
 
-            if (this.isFollowing() && !this.isSitting() && this.getAttackTarget() == null) {
+            if (this.isEntityAlive() && this.isFollowing() && !this.isSitting() && this.getAttackTarget() == null) {
                 EntityLivingBase owner = this.getOwner();
                 if (owner != null && this.getDistanceSq(owner) > 144.0D) {
                     this.teleportToOwner(owner);
@@ -437,11 +438,19 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
 
     @Override
     public boolean attackEntityAsMob(Entity entityIn) {
+        if (!this.isEntityAlive() || this.getHealth() <= 0.0F) return false;
+
         this.attackTimer = 10;
         this.world.setEntityState(this, (byte) 4);
 
         float damage = (float) this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).getAttributeValue();
         return entityIn.attackEntityFrom(DamageSource.causeMobDamage(this), damage);
+    }
+
+    @Override
+    public void onDeath(DamageSource cause) {
+        this.setAttackTarget(null);
+        super.onDeath(cause);
     }
 
     @Override
