@@ -71,7 +71,7 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
 
     @Override
     protected void initEntityAI() {
-        this.tasks.addTask(3, new EntityAIAttackMelee(this, 1.1D, false) {
+        this.tasks.addTask(3, new EntityAIAttackMelee(this, 1.1D, true) {
             @Override
             public boolean shouldExecute() {
                 return !EntityToyDestroyerPity.this.isInWater() && !EntityToyDestroyerPity.this.isSitting() && super.shouldExecute();
