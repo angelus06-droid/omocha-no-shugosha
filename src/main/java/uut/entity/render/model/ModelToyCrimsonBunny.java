@@ -147,7 +147,7 @@ public class ModelToyCrimsonBunny extends ModelBase {
 	public void setLivingAnimations(EntityLivingBase entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTickTime) {
 		super.setLivingAnimations(entitylivingbaseIn, limbSwing, limbSwingAmount, partialTickTime);
 
-		// Obtenemos el tiempo exacto del salto registrado por la entidad
+    // We obtain the exact time of the jump recorded by the entity
 		if (entitylivingbaseIn instanceof EntityToyCrimsonBunny) {
 			EntityToyCrimsonBunny bunny = (EntityToyCrimsonBunny) entitylivingbaseIn;
 			this.jumpProgress = bunny.getJumpCompletion(partialTickTime);
