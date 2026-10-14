@@ -198,7 +198,7 @@ public class ModelToyTinyDragoness extends ModelBase {
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
         super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scaleFactor, entityIn);
 
-        // 1. RESTABLECER PUNTOS DE ROTACIÓN BASE
+        // 1. RESET BASE ROTATION POINTS
         this.body.setRotationPoint(0.0F, 14.0F, -6.0F);
         setRotationAngle(this.body, 0.0F, 0.0F, 0.0F);
 
@@ -260,7 +260,7 @@ public class ModelToyTinyDragoness extends ModelBase {
         this.rightLegBack.rotateAngleX = MathHelper.cos(limbSwing * 0.8882F + (float) Math.PI) * 1.2F * limbSwingAmount;
         this.leftLegBack.rotateAngleX = MathHelper.cos(limbSwing * 0.8882F) * 1.2F * limbSwingAmount;
 
-        // 4. ESTADOS ESPECIALES
+        // 4. SPECIAL STATES
         if (entityIn instanceof EntityToyTinyDragoness) {
             EntityToyTinyDragoness dragon = (EntityToyTinyDragoness) entityIn;
 
