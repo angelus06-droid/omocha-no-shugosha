@@ -88,17 +88,31 @@ public class ModelToyYeti extends ModelBase {
 		modelRenderer.rotateAngleZ = z;
 	}
     
-    public void setRotationAngles(final float limbSwing, final float limbSwingAmount, final float ageInTicks, final float netHeadYaw, final float headPitch, final float scaleFactor, final Entity entityIn) {
-        final float f = 1.0f;
+	public void setRotationAngles(final float limbSwing, final float limbSwingAmount, final float ageInTicks, final float netHeadYaw, final float headPitch, final float scaleFactor, final Entity entityIn) {
 		this.leftleg.rotateAngleX = 1.5f * this.triangleWave(limbSwing, 13.0f) * limbSwingAmount;
 		this.rightleg.rotateAngleX = -1.5f * this.triangleWave(limbSwing, 13.0f) * limbSwingAmount;
-        this.leftleg.rotateAngleY = 0.0f;
-        this.rightleg.rotateAngleY = 0.0f;
-        this.leftleg.rotateAngleZ = 0.0f;
-        this.rightleg.rotateAngleZ = 0.0f;
+		this.leftleg.rotateAngleY = 0.0f;
+		this.rightleg.rotateAngleY = 0.0f;
+		this.leftleg.rotateAngleZ = 0.0f;
+		this.rightleg.rotateAngleZ = 0.0f;
 		this.head.rotateAngleY = netHeadYaw * 0.017453292F;
 		this.head.rotateAngleX = headPitch * 0.017453292F;
-    }
+
+		boolean attacking = entityIn instanceof EntityToyYeti && ((EntityToyYeti) entityIn).getAttackTimer() > 0;
+		if (!attacking) {
+			final float idle = 1.0f - Math.min(1.0f, limbSwingAmount * 2.0f);
+
+			this.rightarm.rotateAngleZ = (MathHelper.cos(ageInTicks * 0.09f) * 0.05f + 0.05f) * idle;
+			this.leftarm.rotateAngleZ = -(MathHelper.cos(ageInTicks * 0.09f) * 0.05f + 0.05f) * idle;
+
+			this.rightarm.rotateAngleX += MathHelper.sin(ageInTicks * 0.067f) * 0.05f * idle;
+			this.leftarm.rotateAngleX -= MathHelper.sin(ageInTicks * 0.067f) * 0.05f * idle;
+		} else {
+			this.rightarm.rotateAngleZ = 0.0f;
+			this.leftarm.rotateAngleZ = 0.0f;
+		}
+	}
+
 
 	public void setLivingAnimations(final EntityLivingBase entitylivingbaseIn, final float limbSwing, final float limbSwingAmount, final float partialTickTime) {
 		final EntityToyYeti entityirongolem = (EntityToyYeti)entitylivingbaseIn;
