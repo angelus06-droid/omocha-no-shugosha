@@ -26,6 +26,7 @@ public class ModelToyTeddyBear extends ModelBase {
     public ModelRenderer body;
     public ModelRenderer collar;
     public ModelRenderer rightarm;
+    private float attackSwing = 0.0F;
 
     public ModelToyTeddyBear() {
         this.textureWidth = 64;
@@ -102,8 +103,8 @@ public class ModelToyTeddyBear extends ModelBase {
         this.body.cubeList.add(new ModelBox(body, 40, 29, -2.0F, -12.0F, 2.0F, 4, 4, 2, 0.0F, false));
 
         this.collar = new ModelRenderer(this);
-        this.collar.setRotationPoint(3.0F, 16.0F, -1.0F);
-        this.collar.cubeList.add(new ModelBox(collar, 0, 52, -7.0F, -8.0F, -1.0F, 8, 8, 4, 0.1F, false));
+        this.collar.setRotationPoint(0.0F, 16.0F, -1.0F);
+        this.collar.cubeList.add(new ModelBox(collar, 0, 52, -4.0F, -8.0F, -1.0F, 8, 8, 4, 0.1F, false));
 
         this.rightarm = new ModelRenderer(this);
         this.rightarm.setRotationPoint(-4.0F, 10.0F, 0.0F);
@@ -138,6 +139,14 @@ public class ModelToyTeddyBear extends ModelBase {
         this.rightarm.rotationPointY = 10.0F;
         this.leftarm.rotationPointY = 10.0F;
 
+        this.rightarm.rotationPointX = -4.0F;
+        this.rightarm.rotationPointZ = 0.0F;
+        this.leftarm.rotationPointX = 4.0F;
+        this.leftarm.rotationPointZ = 0.0F;
+
+        this.body.rotateAngleY = 0.0F;
+        this.collar.rotateAngleY = 0.0F;
+
         this.leftleg.rotationPointY = 16.0F;
         this.leftleg.rotationPointZ = 0.0F;
         this.rightleg.rotationPointY = 16.0F;
@@ -169,8 +178,9 @@ public class ModelToyTeddyBear extends ModelBase {
             isBlocking = hasShield && teddy.isHandActive() && teddy.getActiveHand() == EnumHand.OFF_HAND;
         }
 
-        this.leftleg.rotateAngleX = 1.5f * this.triangleWave(limbSwing, 13.0f) * limbSwingAmount;
-        this.rightleg.rotateAngleX = -1.5f * this.triangleWave(limbSwing, 13.0f) * limbSwingAmount;
+        // Animación de las piernas al caminar
+        this.leftleg.rotateAngleX = 1.5F * this.triangleWave(limbSwing, 13.0F) * limbSwingAmount;
+        this.rightleg.rotateAngleX = -1.5F * this.triangleWave(limbSwing, 13.0F) * limbSwingAmount;
 
         if (hasBow && isBowAiming) {
             this.rightarm.rotateAngleX = -1.5707963F + this.head.rotateAngleX;
@@ -185,12 +195,46 @@ public class ModelToyTeddyBear extends ModelBase {
             this.leftarm.rotateAngleY = 0.5235988F;
             this.leftarm.rotateAngleZ = 0.0F;
         }
+
+        float swing = this.attackSwing;
+        if (swing > 0.0F && swing < 1.0F && !hasBow) {
+            EnumHandSide mainHand = this.getMainHand(entityIn);
+            ModelRenderer swingArm = this.getArmForSide(mainHand);
+            float progress = swing;
+
+            this.body.rotateAngleY = MathHelper.sin(MathHelper.sqrt(progress) * ((float) Math.PI * 2.0F)) * 0.2F;
+            if (mainHand == EnumHandSide.LEFT) {
+                this.body.rotateAngleY *= -1.0F;
+            }
+            this.collar.rotateAngleY = this.body.rotateAngleY;
+
+            this.rightarm.rotationPointZ = MathHelper.sin(this.body.rotateAngleY) * 4.0F;
+            this.rightarm.rotationPointX = -MathHelper.cos(this.body.rotateAngleY) * 4.0F;
+            this.leftarm.rotationPointZ = -MathHelper.sin(this.body.rotateAngleY) * 4.0F;
+            this.leftarm.rotationPointX = MathHelper.cos(this.body.rotateAngleY) * 4.0F;
+
+            this.rightarm.rotateAngleY += this.body.rotateAngleY;
+            this.leftarm.rotateAngleY += this.body.rotateAngleY;
+            this.leftarm.rotateAngleX += this.body.rotateAngleY;
+
+            progress = 1.0F - swing;
+            progress = progress * progress;
+            progress = progress * progress;
+            progress = 1.0F - progress;
+
+            float f2 = MathHelper.sin(progress * (float) Math.PI);
+            float f3 = MathHelper.sin(swing * (float) Math.PI) * -(this.head.rotateAngleX - 0.7F) * 0.75F;
+
+            swingArm.rotateAngleX = (float) ((double) swingArm.rotateAngleX - ((double) f2 * 1.2D + (double) f3));
+            swingArm.rotateAngleY += this.body.rotateAngleY * 2.0F;
+            swingArm.rotateAngleZ += MathHelper.sin(swing * (float) Math.PI) * -0.4F;
+        }
     }
 
     @Override
     public void setLivingAnimations(final EntityLivingBase entitylivingbaseIn, final float limbSwing, final float limbSwingAmount, final float partialTickTime) {
         final EntityToyTeddyBear entity = (EntityToyTeddyBear) entitylivingbaseIn;
-        final int attackTimer = entity.getAttackTimer();
+        this.attackSwing = entity.getAttackProgress(partialTickTime);
         boolean hasBow = entity.getHeldItemMainhand().getItem() instanceof ItemBow;
         boolean hasShield = entity.getHeldItemOffhand().getItem() instanceof ItemShield;
         boolean isBowAiming = entity.isAiming();
@@ -205,23 +249,21 @@ public class ModelToyTeddyBear extends ModelBase {
                     + idleSway + idleBob;
         }
 
-        if (attackTimer > 0 && !hasBow) {
-            this.rightarm.rotateAngleX = -2.0f + 1.5f * this.triangleWave(attackTimer - partialTickTime, 10.0f);
-        } else if (!hasBow || !isBowAiming) {
+        if (!hasBow || !isBowAiming) {
             this.rightarm.rotateAngleX = (-0.2f + 1.5f * this.triangleWave(limbSwing, 13.0f)) * limbSwingAmount
                     - idleSway + idleBob;
         }
     }
 
     private float triangleWave(final float p_78172_1_, final float p_78172_2_) {
-        return (Math.abs(p_78172_1_ % p_78172_2_ - p_78172_2_ * 0.5f) - p_78172_2_ * 0.25f) / (p_78172_2_ * 0.25f);
+        return (Math.abs(p_78172_1_ % p_78172_2_ - p_78172_2_ * 0.5F) - p_78172_2_ * 0.25F) / (p_78172_2_ * 0.25F);
     }
 
     protected EnumHandSide getMainHand(final Entity entityIn) {
         if (entityIn instanceof EntityLivingBase) {
             final EntityLivingBase entitylivingbase = (EntityLivingBase) entityIn;
             final EnumHandSide enumhandside = entitylivingbase.getPrimaryHand();
-            return (entitylivingbase.swingingHand == EnumHand.MAIN_HAND) ? enumhandside : enumhandside.opposite();
+            return (entitylivingbase.swingingHand != EnumHand.OFF_HAND) ? enumhandside : enumhandside.opposite();
         }
         return EnumHandSide.RIGHT;
     }
