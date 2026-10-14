@@ -50,12 +50,22 @@ public class EntityToyYeti extends BaseDefensiveMob {
         this.tasks.addTask(1, new EntityAISwimming(this));
 
         this.tasks.addTask(2, new EntityAILeapAtTarget(this, 0.4f));
-        this.tasks.addTask(3, new EntityAIAttackMelee(this, 1.1D, false));
+        this.tasks.addTask(3, new EntityAIAttackMelee(this, 1.1D, true));
 
         this.tasks.addTask(4, new EntityAIFollowOwner(this, 1.1D, 10.0F, 2.0F) {
+            private boolean hasTarget() {
+                EntityLivingBase t = getAttackTarget();
+                return t != null && t.isEntityAlive();
+            }
+
             @Override
             public boolean shouldExecute() {
-                return isFollowing() && super.shouldExecute();
+                return isFollowing() && !hasTarget() && super.shouldExecute();
+            }
+
+            @Override
+            public boolean shouldContinueExecuting() {
+                return isFollowing() && !hasTarget() && super.shouldContinueExecuting();
             }
         });
 
