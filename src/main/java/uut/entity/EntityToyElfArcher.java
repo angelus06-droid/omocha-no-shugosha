@@ -254,7 +254,7 @@ public class EntityToyElfArcher extends BaseDefensiveMob implements IRangedAttac
             }
 
             boolean isBlacklisted = heldItem.getItem() == ModItems.gunner_gun || heldItem.getItem() == ModItems.watergun;
-            boolean isWeapon = (heldItem.getItem() instanceof ItemBow || heldItem.getItem() instanceof ItemTool) && !isBlacklisted;
+            boolean isWeapon = heldItem.getItem() instanceof ItemBow && !isBlacklisted;
             boolean isHandEmpty = heldItem.isEmpty();
 
             if (isWeapon || isHandEmpty) {
