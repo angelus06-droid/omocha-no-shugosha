@@ -148,8 +148,7 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
                     this.motionY += (dy / dist) * targetSpeed;
                     this.motionZ += (dz / dist) * targetSpeed;
 
-                    float targetYaw = (float)(MathHelper.atan2(dz, dx) * (180D / Math.PI)) - 90.0F;
-                    this.rotationYaw = this.rotationYawHead = this.renderYawOffset = this.updateRotation(this.rotationYaw, targetYaw, 10.0F);
+                    this.faceDirection(dx, dy, dz, 35.0F, 20.0F);
                 } else if (dist <= 2.0D) {
                     this.motionX *= 0.5D;
                     this.motionY *= 0.5D;
@@ -192,8 +191,7 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
                             this.motionY += (dy / dist) * 0.015D;
                             this.motionZ += (dz / dist) * 0.015D;
 
-                            float targetYaw = (float)(MathHelper.atan2(dz, dx) * (180D / Math.PI)) - 90.0F;
-                            this.rotationYaw = this.rotationYawHead = this.renderYawOffset = this.updateRotation(this.rotationYaw, targetYaw, 5.0F);
+                            this.faceDirection(dx, dy, dz, 25.0F, 15.0F);
                         }
                     } else {
                         this.waterWanderTicks = 0;
@@ -207,11 +205,21 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
 
     private float updateRotation(float current, float target, float maxChange) {
         float f = MathHelper.wrapDegrees(target - current);
-        if (f > maxChange) f = maxChange;
-        if (f < -maxChange) f = -maxChange;
+        f = MathHelper.clamp(f, -maxChange, maxChange);
         return current + f;
     }
 
+    private void faceDirection(double dx, double dy, double dz, float yawSpeed, float pitchSpeed) {
+        float targetYaw = (float) (MathHelper.atan2(dz, dx) * (180D / Math.PI)) - 90.0F;
+        double horizontal = MathHelper.sqrt(dx * dx + dz * dz);
+        float targetPitch = (float) -(MathHelper.atan2(dy, horizontal) * (180D / Math.PI));
+        targetPitch = MathHelper.clamp(targetPitch, -45.0F, 45.0F);
+
+        this.rotationYaw = this.updateRotation(this.rotationYaw, targetYaw, yawSpeed);
+        this.rotationPitch = this.updateRotation(this.rotationPitch, targetPitch, pitchSpeed);
+        this.rotationYawHead = this.rotationYaw;
+        this.renderYawOffset = this.rotationYaw;
+    }
     @Override
     public void onLivingUpdate() {
         super.onLivingUpdate();
@@ -235,8 +243,7 @@ public class EntityToyDestroyerPity extends BaseDefensiveMob {
                     this.motionY += (dy / distance) * speedModifier;
                     this.motionZ += (dz / distance) * speedModifier;
 
-                    float targetYaw = (float)(MathHelper.atan2(dz, dx) * (180D / Math.PI)) - 90.0F;
-                    this.rotationYaw = this.rotationYawHead = this.renderYawOffset = this.updateRotation(this.rotationYaw, targetYaw, 30.0F);
+                    this.faceDirection(dx, dy, dz, 50.0F, 30.0F);
                 }
 
                 if (distanceSq < 2.5D && this.attackTimer <= 0) {
