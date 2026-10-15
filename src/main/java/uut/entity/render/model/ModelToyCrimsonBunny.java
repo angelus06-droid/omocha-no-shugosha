@@ -158,33 +158,44 @@ public class ModelToyCrimsonBunny extends ModelBase {
 
 	@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
-		this.head.rotateAngleY = netHeadYaw * 0.017453292F;
-		this.head.rotateAngleX = headPitch * 0.017453292F;
-
 		float tailIdleWave = MathHelper.cos(ageInTicks * 0.08F);
-
 		float jumpArc = MathHelper.sin(this.jumpProgress * (float) Math.PI);
 
-		this.body.rotateAngleX = -(jumpArc * -0.45F);
-		this.body.rotationPointY = 16.0F - (jumpArc * -3.0F);
+		float bodyAngle = jumpArc * 0.45F;
+		float bodyPivotY = 16.0F + (jumpArc * 3.0F);
+		this.body.rotateAngleX = bodyAngle;
+		this.body.rotationPointY = bodyPivotY;
 
-		float backLegsAngle = 0.3927F + (jumpArc * 1.05F);
+		float offY = 15.0F - 16.0F;
+		float offZ = -2.5F - (-1.5F);
+		float cos = MathHelper.cos(bodyAngle);
+		float sin = MathHelper.sin(bodyAngle);
+
+		this.head.rotationPointY = bodyPivotY + (offY * cos - offZ * sin);
+		this.head.rotationPointZ = -1.5F + (offY * sin + offZ * cos);
+
+		this.head.rotateAngleY = netHeadYaw * 0.017453292F;
+		this.head.rotateAngleX = headPitch * 0.017453292F + bodyAngle * 0.5F;
+
+		float backLegsAngle = 0.3927F + (jumpArc * 1.5F);
 		this.leftLeg.rotateAngleX = backLegsAngle;
 		this.rightLeg.rotateAngleX = backLegsAngle;
 
-		float frontLegsAngleX = -jumpArc * 1.2F;
+		float frontLegsAngleX = -jumpArc * -0.4F;
 		this.leftLegFront.rotateAngleX = frontLegsAngleX;
 		this.rightLegFront.rotateAngleX = frontLegsAngleX;
 
-		float spreadZ = jumpArc * 0.3F;
+		float spreadZ = jumpArc * 0.15F;
 		this.leftLegFront.rotateAngleZ = -spreadZ;
 		this.rightLegFront.rotateAngleZ = spreadZ;
 
 		float earIdle = MathHelper.cos(ageInTicks * 0.08F) * 0.03F;
 		float earLag = MathHelper.sin(Math.max(0.0F, this.jumpProgress - 0.12F) * (float) Math.PI) * 0.40F;
 
-		this.rightEar.rotateAngleX = earIdle + earLag;
-		this.leftEar.rotateAngleX = earIdle + earLag;
+		float earJumpRotation = jumpArc * -0.85F;
+
+		this.rightEar.rotateAngleX = earIdle + earLag + earJumpRotation;
+		this.leftEar.rotateAngleX = earIdle + earLag + earJumpRotation;
 
 		float tailIdle = tailIdleWave * 0.05F;
 		float tailJump = jumpArc * 0.35F;
